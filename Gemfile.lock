@@ -20,9 +20,16 @@ GEM
     faker (1.4.3)
       i18n (~> 0.5)
     i18n (0.7.0)
+    jasmine (2.2.0)
+      jasmine-core (~> 2.2)
+      phantomjs
+      rack (>= 1.2.1)
+      rake
+    jasmine-core (2.2.0)
     json (1.8.2)
     minitest (5.5.1)
     pg (0.18.1)
+    phantomjs (1.9.8.0)
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
@@ -60,6 +67,7 @@ DEPENDENCIES
   activerecord
   activesupport
   faker
+  jasmine
   pg
   rack-test
   rake
