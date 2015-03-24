@@ -5,6 +5,23 @@ get '/sealions' do
   erb :'index'
 end
 
+get '/sealions/new' do
+  erb :'sealions/new'
+end
+
+post '/sealions' do
+  new_sealion = Sealion.new(name: params[:name])
+
+  if new_sealion.save
+    redirect '/sealions'
+  else
+    [402, "Something went wrong here."]
+  end
+end
+
+
+
+
 # get '/sealions/:id' do
 #   'This route finds a specific sealion'
 #   Sealion.find(params[:id]).to_json
