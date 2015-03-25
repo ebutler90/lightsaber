@@ -1,8 +1,9 @@
-<h3>Create a new Sealion:</h3>
+<h3>Edit This Sealion</h3>
 
-  <form action="/sealions" method="post">
+<form action="/sealions/<%=@current_sealion.id%>/edit" method="post">
+   <input type='hidden' name='_method' value='put' />
     <input type="text" placeholder="First and Last Name" name='name'/>
     <input type="text" placeholder="Email Address" name='email'/>
     <input type="text" placeholder="Quirk" name='quirk'/>
-    <input type="submit" value="Add Sealion" />
+    <input type="submit" value="Update Sealion" />
   </form>

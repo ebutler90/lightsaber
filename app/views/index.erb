@@ -3,9 +3,11 @@
 <ul>
 <% @all_sealions.each do |sealion| %>
   <li>
-    <%= sealion.name %>
+    <a href= "/sealions/<%=sealion.id%>"><%=sealion.name %></a>
   </li>
 
 <% end %>
 
 </ul>
+
+ <a href= "/sealions/new">Create a New Sealion</a>
